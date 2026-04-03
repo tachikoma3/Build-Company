@@ -1,8 +1,5 @@
-import gsap from "gsap";
+import "./utils/animetion.js";
 
-import { fadeUp } from "./utils/animation.js";
-
-fadeUp(".about__inner");
 
 gsap.from(".about__inner", {
   scrollTrigger: {

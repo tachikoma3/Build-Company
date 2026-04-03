@@ -1,6 +1,5 @@
-// import "./Form/utils/animetion.js"
-gsap.registerPlugin(ScrollTrigger);
-
+import gsap from "gsap"
+// gsap.registerPlugin(ScrollTrigger);
 
 
 // prefers-reduced-motion 判定

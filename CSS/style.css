@@ -48,7 +48,7 @@ img {
 .about__img {
   max-width: 1200px;
   width: 80%;
-  height: 90%;
+  height: auto;
   margin: 10px;
 }
 .about__img img {
