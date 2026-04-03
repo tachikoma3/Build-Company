@@ -1,4 +1,3 @@
-import gsap from "gsap";
 
 
 gsap.from(".hero__title", {

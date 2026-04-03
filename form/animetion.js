@@ -1,5 +1,4 @@
 import gsap from "gsap"
-// gsap.registerPlugin(ScrollTrigger);
 
 
 // prefers-reduced-motion 判定
