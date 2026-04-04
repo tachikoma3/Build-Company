@@ -1,7 +1,7 @@
 gsap.from(".works__grid", {
   scrollTrigger: {
     trigger: ".works",
-    start: "top 50%",
+    start: "top 40%",
     once: true
   },
   y: -80,
