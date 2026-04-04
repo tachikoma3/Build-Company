@@ -1,6 +1,3 @@
-import gsap from "gsap"
-
-
 // prefers-reduced-motion 判定
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -9,8 +6,6 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
  * @param {string} target - 対象セレクタ
  * @param {Object} options - 追加オプション
  */
-export function fadeUp(target, options = {}) {
-
   // 動きを減らす設定の場合はアニメーションしない
   if (reduceMotion) {
     gsap.set(target, { opacity: 1, y: 0 });
@@ -29,4 +24,3 @@ export function fadeUp(target, options = {}) {
     ease: "power2.out",
     ...options
   });
-}

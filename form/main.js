@@ -1,9 +1,3 @@
-import "./hero.js";
-import "./about.js";
-import "./work.js";
-import "./contact.js";
-import "./animetion.js";
-
 gsap.registerPlugin(ScrollTrigger); // ← ここだけで登録すればOK
 
 // 各ファイルの読み込みは不要（HTMLの<script>タグで直接読む）

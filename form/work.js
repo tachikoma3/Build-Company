@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 gsap.from(".works__item1", {
   scrollTrigger: {
     trigger: ".works",

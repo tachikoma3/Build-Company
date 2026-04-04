@@ -1,6 +1,3 @@
-import "./utils/animetion.js";
-
-
 gsap.from(".about__inner", {
   scrollTrigger: {
     trigger: ".about",

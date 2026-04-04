@@ -1,6 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
-
   gsap.from(".contact__inner", {
     scrollTrigger: {
       trigger: ".contact",
@@ -12,4 +9,3 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 0.8,
     ease: "power3.out"
   });
-});
