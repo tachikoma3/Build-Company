@@ -1,4 +1,4 @@
-gsap.from(".works__item", {
+gsap.from(".works__grid", {
   scrollTrigger: {
     trigger: ".works",
     start: "top 50%",
