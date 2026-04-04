@@ -1,7 +1,7 @@
   gsap.from(".contact__inner", {
     scrollTrigger: {
       trigger: ".contact",
-      start: "top 60%",
+      start: "top 40%",
       once: true
     },
     y: 40,

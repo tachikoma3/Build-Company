@@ -13,7 +13,7 @@ gsap.from(".works__item1", {
 gsap.from(".works__item2", {
   scrollTrigger: {
     trigger: ".works",
-    start: "top 50%",
+    start: "top 40%",
     ease: "power3.out",
     once: true
   },

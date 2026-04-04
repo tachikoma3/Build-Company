@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.defaults({
     duration: 0.6,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 });

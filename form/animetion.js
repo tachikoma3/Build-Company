@@ -15,13 +15,13 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
   gsap.from(target, {
     scrollTrigger: {
       trigger: target,
-      start: "top 60%",
+      start: "top 40%",
       once: true
     },
     opacity: 0,
     y: 20,
     duration: 0.6,
     stagger: 0.2,
-    ease: "power2.out",
+    ease: "power3.out",
     ...options
   });
