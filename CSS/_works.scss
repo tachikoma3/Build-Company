@@ -27,7 +27,7 @@
     /* 画像サイズを統一 */
     img {
       width: 100%;
-      height: 200px;       /* 全カード共通の高さ */
+      height: 70%;       /* 全カード共通の高さ */
       object-fit: cover;   /* 縦横比を保ちながら枠に合わせてトリミング */
       border-radius: 4px;
       margin-bottom: 16px;
