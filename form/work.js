@@ -1,24 +1,13 @@
-gsap.from(".works__item1", {
+gsap.from(".works__grid", {
   scrollTrigger: {
     trigger: ".works",
-    start: "top 80%",
+    start: "top 50%",
     once: true
   },
-  x: -80,
+  y: -80,
   opacity: 0,
   duration: 0.8,
-  ease: "power3.out"
-});
-
-gsap.from(".works__item2", {
-  scrollTrigger: {
-    trigger: ".works",
-    start: "top 40%",
-    ease: "power3.out",
-    once: true
-  },
-  x: 80,
-  opacity: 0,
-  duration: 0.8,
-  ease: "power3.out"
+  ease: "power3.out",
+  stagger: 0.2,
+  delay: 0.5
 });
