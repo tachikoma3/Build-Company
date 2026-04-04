@@ -1,4 +1,4 @@
-gsap.from(".about__inner", {
+gsap.from(".about__img", {
   scrollTrigger: {
     trigger: ".about",
     start: "top 40%"
