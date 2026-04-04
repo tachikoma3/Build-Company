@@ -43,12 +43,21 @@ img {
 
 .hero {
   min-height: 100vh;
-  display: flex;
   align-items: center;
 }
 .hero__title {
-  font-size: clamp(28px, 4vw, 48px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
   margin-bottom: 20px;
+}
+.hero img {
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+  border-radius: 40px;
 }
 
 .about__img {
