@@ -50,7 +50,8 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 40px;
+  gap: 40px;
+  font-size: clamp(22px, 3.5vw, 40px);
   margin-bottom: 20px;
 }
 .hero img {
@@ -58,6 +59,19 @@ img {
   width: 60%;
   height: auto;
   border-radius: 40px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .hero__title {
+    flex-direction: column;
+    text-align: center;
+    font-size: clamp(18px, 6vw, 28px);
+    gap: 24px;
+  }
+  .hero img {
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 
 .about__img {
@@ -67,7 +81,7 @@ img {
 }
 .about__img img {
   border-radius: 40px;
-  margin-left: 14%;
+  margin-left: 25%;
 }
 
 .works {
@@ -94,7 +108,7 @@ img {
 }
 .works__item img {
   width: 100%;
-  height: auto; /* 全カード共通の高さ */
+  height: 80%; /* 全カード共通の高さ */
   -o-object-fit: cover;
      object-fit: cover; /* 縦横比を保ちながら枠に合わせてトリミング */
   border-radius: 4px;

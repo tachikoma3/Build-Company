@@ -1,22 +1,42 @@
 @use "variables";
 
 .hero {
- 
   min-height: 100vh;
   align-items: center;
 
   &__title {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;      // PC：横並び
     align-items: center;
-    justify-content:space-between;
-    font-size: 40px;
+    justify-content: space-between;
+    gap: 40px;
+
+    // clamp(最小値, 推奨値, 最大値)
+    // 画面幅に応じて自動でフォントサイズが変わる
+    font-size: clamp(22px, 3.5vw, 40px);
     margin-bottom: 20px;
   }
-  img{
+
+  img {
     max-width: 100%;
     width: 60%;
     height: auto;
     border-radius: 40px;
+    flex-shrink: 0;           // 画像が縮みすぎるのを防ぐ
+  }
+
+  // ── スマホ ──
+  @media (max-width: 768px) {
+    &__title {
+      flex-direction: column; // スマホ：縦並びに切り替え
+      text-align: center;
+      font-size: clamp(18px, 6vw, 28px); // スマホ用にさらに調整
+      gap: 24px;
+    }
+
+    img {
+      width: 100%;            // スマホでは画像を全幅に
+      border-radius: 20px;    // 角丸も少し小さく
+    }
   }
 }
