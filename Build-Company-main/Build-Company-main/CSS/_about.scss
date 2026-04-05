@@ -1,0 +1,11 @@
+@use "variables";
+
+.about__img{
+    max-width: variables.$max-width;
+    width: 80%;
+    height: auto;
+    img{
+            border-radius: 40px;
+            margin-left: 25%;
+    }
+}

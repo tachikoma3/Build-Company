@@ -1,0 +1,14 @@
+@use "variables";
+
+.block {
+  padding: 120px 24px;
+
+  @media (max-width: 768px) {
+    padding: 80px 20px;
+  }
+}
+
+.inner {
+  max-width: variables.$max-width;
+  margin: 0 auto;
+}

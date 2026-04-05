@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>白灯テクノロジーズ</title>
+  <meta name="description" content="UI実装とアニメーション設計に特化したスタートアップ" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./CSS/reset.css" />
+<link rel="stylesheet" href="./CSS/style.css" />
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="inner">
+    <img src="./images/白灯テクノロジーズトップ背景透過.png" alt="白灯テクノロジーズ">
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero block" id="hero">
+    <div class="hero__inner inner">
+      <div class="hero__content">
+        <div  class="hero__title">
+        <h2>
+          複雑を、整える。<br>
+          動きを、意味にする。
+        </h2>
+        <img src="./images/複雑を、整える。_動きを、意味にする。3.jpg" alt="">
+        </div>
+      </div>
+        <p class="hero__text">
+          UI実装とアニメーション設計に特化したフロントエンドスタジオ。
+        </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about block" id="about">
+    <div class="about__inner inner">
+      <h2 class="section-title">私たちについて</h2>
+      <p>
+        情報を整理し、迷いのないインターフェースを設計します。
+        動きは装飾ではなく、理解を助けるために存在します。
+      </p>
+    </div>
+    <div class="about__img">
+    <img src="./images/活気あるテックスタートアップオフィス.png" alt="心霊現象も楽しめるオフィスの様子">
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="works block" id="works">
+    <div class="inner">
+      <h2 class="section-title">制作事例</h2>
+
+      <div class="works__grid">
+        <article class="works__item">
+          <img src="./images/UI改善プロジェクト.png" alt="改善点紹介">
+          <h3>UI改善プロジェクト</h3>
+          <p>業務効率化を目的としたSaaSダッシュボード設計。</p>
+        </article>
+
+        <article class="works__item">
+          <img src="./images/HAKUTORI TECHNOLOGIESのウェブサイトデザイン.png" alt="サイト改善状況">
+          <h3>ブランドサイト構築</h3>
+          <p>視認性と動線設計を重視したコーポレートサイト。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact block" id="contact">
+    <div class="contact__inner inner">
+      <h2 class="section-title">お問い合わせ</h2>
+      <a href="mailto:test@example.com" class="contact__btn">
+        ご相談はこちら
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="inner">
+    <small>© 2026 白灯テクノロジーズ</small>
+  </div>
+</footer>
+
+<!-- GSAP CDN -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/EasePack.min.js"></script> -->
+
+<script src="./form/main.js"></script>
+<script src="./form/hero.js"></script>
+<script src="./form/about.js"></script>
+<script src="./form/work.js"></script>
+<script src="./form/contact.js"></script>
+</body>
+</html>
