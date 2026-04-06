@@ -18,7 +18,7 @@
 
 <header class="header">
   <div class="inner">
-    <img src="./images/白灯テクノロジーズトップ背景透過.png" alt="白灯テクノロジーズ">
+    <img src="./images/白灯テクノロジーズトップ背景透過.png" alt="">
   </div>
 </header>
 
@@ -52,9 +52,88 @@
       </p>
     </div>
     <div class="about__img">
-    <img src="./images/活気あるテックスタートアップオフィス.png" alt="心霊現象も楽しめるオフィスの様子">
+    <img src="./images/活気あるテックスタートアップオフィス.png" alt="">
     </div>
   </section>
+
+<!-- =============================
+  SERVICE セクション
+  配置場所：About セクションの直後、Works の直前に挿入する
+
+  構造：
+  .service.block
+    └── .inner
+          ├── h2.section-title
+          └── .service__grid
+                └── .service__card × 3
+                      ├── .service__num
+                      ├── .service__icon（SVGアイコン）
+                      ├── h3.service__title
+                      └── p.service__body
+============================= -->
+<!-- <link rel="stylesheet" href="css/service.css"> -->
+
+<section class="service block" id="service">
+  <div class="inner">
+    <h2 class="section-title">サービス内容</h2>
+
+    <div class="service__grid">
+
+      <!-- カード01：UI実装 -->
+      <article class="service__card">
+        <span class="service__num">01</span>
+        <div class="service__icon">
+          <!-- コードアイコン（SVG） -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <h3 class="service__title">UI実装</h3>
+        <p class="service__body">
+          デザインデータを忠実にコーディング。<br>
+          ピクセル単位の精度で画面に再現します。
+        </p>
+      </article>
+
+      <!-- カード02：アニメーション設計 -->
+      <article class="service__card">
+        <span class="service__num">02</span>
+        <div class="service__icon">
+          <!-- 再生・動きアイコン（SVG） -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"></path>
+          </svg>
+        </div>
+        <h3 class="service__title">アニメーション設計</h3>
+        <p class="service__body">
+          GSAPを用いた動きの設計。<br>
+          装飾ではなく、伝えるための動きを作ります。
+        </p>
+      </article>
+
+      <!-- カード03：レスポンシブ対応 -->
+      <article class="service__card">
+        <span class="service__num">03</span>
+        <div class="service__icon">
+          <!-- デバイスアイコン（SVG） -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+            <line x1="12" y1="18" x2="12" y2="18"></line>
+          </svg>
+        </div>
+        <h3 class="service__title">レスポンシブ対応</h3>
+        <p class="service__body">
+          スマホからPCまで崩れない実装。<br>
+          あらゆる画面サイズに最適化します。
+        </p>
+      </article>
+
+    </div><!-- /.service__grid -->
+  </div><!-- /.inner -->
+</section><!-- /#service -->
+
 
   <!-- WORKS -->
   <section class="works block" id="works">
@@ -63,13 +142,13 @@
 
       <div class="works__grid">
         <article class="works__item">
-          <img src="./images/UI改善プロジェクト.png" alt="改善点紹介">
+          <img src="./images/UI改善プロジェクト.png" alt="">
           <h3>UI改善プロジェクト</h3>
           <p>業務効率化を目的としたSaaSダッシュボード設計。</p>
         </article>
 
         <article class="works__item">
-          <img src="./images/HAKUTORI TECHNOLOGIESのウェブサイトデザイン.png" alt="サイト改善状況">
+          <img src="./images/Gemini_Generated_Image_.png" alt="">
           <h3>ブランドサイト構築</h3>
           <p>視認性と動線設計を重視したコーポレートサイト。</p>
         </article>
