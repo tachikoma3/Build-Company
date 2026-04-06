@@ -30,7 +30,7 @@
     &__title {
       flex-direction: column; // スマホ：縦並びに切り替え
       text-align: center;
-      font-size: clamp(18px, 6vw, 28px); // スマホ用にさらに調整
+      font-size: clamp(20px, 6vw, 28px); // スマホ用にさらに調整
       gap: 24px;
     }
 
